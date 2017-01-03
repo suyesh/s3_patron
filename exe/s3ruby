@@ -1,4 +1,0 @@
-# !/usr/bin/env ruby
-
-require 's3_commander/cli'
-S3Commander::CLI.start
