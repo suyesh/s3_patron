@@ -2,9 +2,9 @@ require 'thor'
 
 module Kewl
     class CLI < Thor
-        desc 'shake!', 'Shakes the world'
+        desc 'shake! NAME', 'Shakes the world'
         def shake!(name, hello)
-            say 'grrr'
+            say "'grrr' #{name}"
         end
     end
 end
