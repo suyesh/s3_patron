@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'kewl/version'
+require 's3_patron/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "Kewl"
-  spec.version       = Kewl::VERSION
+  spec.name          = "s3_patron"
+  spec.version       = S3Patron::VERSION
   spec.authors       = ["Suyesh Bhandari"]
   spec.email         = ["suyeshb@gmail.com"]
 

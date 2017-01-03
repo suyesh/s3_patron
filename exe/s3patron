@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 's3_patron'
+
+S3Patron::Cli.start(ARGV)
