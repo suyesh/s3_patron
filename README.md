@@ -33,6 +33,68 @@ $ s3patron upload [BUCKET_NAME] [FILE] [REGION(OPTIONAL)] # Upload into bucket
 
 ```
 
+##List Buckets
+
+```shell
+#Normal
+$ s3patron buckets
+# Will list all buckets in your s3. By default it lists first 50 items
+
+$ s3patron buckets -a
+# passing -a flag will list all items with no limit.
+
+$ s3patron buckets -l 10 #will show first 10 buckets
+# You can customize number of results by passing -l flag followed by limit
+```
+
+#Create Bucket
+
+```shell
+#Normal
+$ s3patron create example_bucket
+# Will create a bucket named example_bucket
+
+#Optional
+# If you do not want to use the AWS REGION defined in env variables you can pass region as next argument to create
+$ s3patron create example_bucket us-east-1
+```
+
+##List Objects inside the bucket
+
+```shell
+#Normal
+$ s3patron list example_bucket
+# Will list all objects inside example_bucket in your s3. By default it lists first 50 items
+
+$ s3patron list example_bucket -a
+# passing -a flag will list all items with no limit.
+
+$ s3patron list example_bucket -l 10 #will show first 10 buckets
+# You can customize number of results by passing -l flag followed by limit
+```
+
+##Upload into a bucket
+```shell
+#Normal
+$ s3patron upload example_bucket example_file.txt
+# Will upload example_file.txt to example_bucket
+
+#Optional
+# If you do not want to use the AWS REGION defined in env variables you can pass region as next argument
+```
+
+##Download object from bucket
+```shell
+#Normal
+$ s3patron download example_bucket example_file.txt
+# Will download example_file.txt to current directory
+
+#Optional
+# If you do not want to use the AWS REGION defined in env variables you can pass region as next argument
+```
+
+
+
 ##Rubygems.org
 Hosted at [Rubygems.org](https://rubygems.org/gems/s3_patron)
 

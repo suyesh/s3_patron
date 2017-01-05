@@ -28,7 +28,6 @@ module S3Patron
         end
 
         desc 'upload BUCKET_NAME FILE REGION(OPTIONAL) PATH_TO_FILE', 'Upload into a bucket'
-        method_option :bucket, type: :string, default: false, aliases: '-b', desc: 'Name of the bucket where you want to upload'
         def upload(bucket_name, file, region=ENV['AWS_REGION'])
           s3 = Aws::S3::Resource.new(region: region)
           begin
