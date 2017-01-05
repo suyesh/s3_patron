@@ -29,7 +29,7 @@ $ s3patron create [BUCKET_NAME] [REGION(OPTIONAL)]  # create bucket
 $ s3patron download [BUCKET_NAME] [OBJECT] [DOWNLOAD_LOCATION(OPTIONAL)] [REGION(OPTIONAL)] # Download object from bucket
 $ s3patron help [COMMAND] # Describe Commands
 $ s3patron list [BUCKET_NAME] [REGION(OPTIONAL)] # List objects inside bucket
-$ s3patron upload [BUCKET_NAME] [FILE REGION(OPTIONAL)] # Upload into bucket
+$ s3patron upload [BUCKET_NAME] [FILE] [REGION(OPTIONAL)] # Upload into bucket
 
 ```
 
