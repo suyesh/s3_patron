@@ -31,6 +31,7 @@ $ s3patron help [COMMAND] # Describe Commands
 $ s3patron list [BUCKET_NAME] [REGION(OPTIONAL)] # List objects inside bucket
 $ s3patron upload [BUCKET_NAME] [FILE] [REGION(OPTIONAL)] # Upload into bucket
 
+#You can also use s3p instead of s3patron
 ```
 
 #Examples
@@ -47,6 +48,8 @@ $ s3patron buckets -a
 
 $ s3patron buckets -l 10 #will show first 10 buckets
 # You can customize number of results by passing -l flag followed by limit
+
+#You can also use s3p instead of s3patron
 ```
 
 ##Create Bucket
@@ -59,6 +62,8 @@ $ s3patron create example_bucket
 #Optional
 # If you do not want to use the AWS REGION defined in env variables you can pass region as next argument to create
 $ s3patron create example_bucket us-east-1
+
+#You can also use s3p instead of s3patron
 ```
 
 ##List Objects inside the bucket
@@ -73,6 +78,8 @@ $ s3patron list example_bucket -a
 
 $ s3patron list example_bucket -l 10 #will show first 10 buckets
 # You can customize number of results by passing -l flag followed by limit
+
+#You can also use s3p instead of s3patron
 ```
 
 ##Upload into a bucket
@@ -83,6 +90,8 @@ $ s3patron upload example_bucket example_file.txt
 
 #Optional
 # If you do not want to use the AWS REGION defined in env variables you can pass region as next argument
+
+#You can also use s3p instead of s3patron
 ```
 
 ##Download object from bucket
@@ -93,6 +102,8 @@ $ s3patron download example_bucket example_file.txt
 
 #Optional
 # If you do not want to use the AWS REGION defined in env variables you can pass region as next argument
+
+#You can also use s3p instead of s3patron
 ```
 
 
