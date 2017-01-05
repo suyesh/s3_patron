@@ -22,14 +22,14 @@ Set ENV variables
 
 ## Usage
 
-```
-Commands:
-  s3patron buckets REGION(OPTIONAL)                                                  # List all buckets
-  s3patron create BUCKET_NAME REGION(OPTIONAL)                                       # create bucket
-  s3patron download BUCKET_NAME OBJECT DOWNLOAD_LOCATION(OPTIONAL) REGION(OPTIONAL)  # Download object from bucket
-  s3patron help [COMMAND]                                                            # Describe Commands
-  s3patron list BUCKET_NAME REGION(OPTIONAL)                                         # List objects inside bucket
-  s3patron upload BUCKET_NAME FILE REGION(OPTIONAL) PATH_TO_FILE                     # Upload into bucket
+```shell
+#List of Commands:
+$ s3patron buckets [REGION(OPTIONAL)]   # List all buckets
+$ s3patron create [BUCKET_NAME] [REGION(OPTIONAL)]  # create bucket
+$ s3patron download [BUCKET_NAME] [OBJECT] [DOWNLOAD_LOCATION(OPTIONAL)] [REGION(OPTIONAL)] # Download object from bucket
+$ s3patron help [COMMAND] # Describe Commands
+$ s3patron list [BUCKET_NAME] [REGION(OPTIONAL)] # List objects inside bucket
+$ s3patron upload [BUCKET_NAME] [FILE REGION(OPTIONAL)] # Upload into bucket
 
 ```
 
