@@ -33,6 +33,8 @@ $ s3patron upload [BUCKET_NAME] [FILE] [REGION(OPTIONAL)] # Upload into bucket
 
 ```
 
+#Examples
+
 ##List Buckets
 
 ```shell
@@ -47,7 +49,7 @@ $ s3patron buckets -l 10 #will show first 10 buckets
 # You can customize number of results by passing -l flag followed by limit
 ```
 
-#Create Bucket
+##Create Bucket
 
 ```shell
 #Normal
