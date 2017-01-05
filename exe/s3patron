@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require 's3_patron'
+require_relative '../lib/s3_patron.rb'
 
 S3Patron::Cli.start(ARGV)
