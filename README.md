@@ -33,6 +33,8 @@ Commands:
 
 ```
 
+##Rubygems.org
+Hosted at [Rubygems.org](https://rubygems.org/gems/s3_patron)
 
 ## License
 
