@@ -1,3 +1,3 @@
 module S3Patron
-    VERSION = '0.0.2.pre'.freeze
+    VERSION = '0.0.2'.freeze
 end
