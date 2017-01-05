@@ -7,7 +7,7 @@ S3-Patron lets you list, upload, download to and from s3 using your terminal
 ## Setup
 Make sure [Ruby](https://www.ruby-lang.org/en/documentation/installation/) is installed.
 
-Add this line to your application's Gemfile:
+Execute:
 ```
     $ gem install s3_patron
 ```
