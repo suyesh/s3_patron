@@ -106,7 +106,7 @@ $ s3patron download example_bucket example_file.txt
 #You can also use s3p instead of s3patron
 ```
 
-
+#TODO: Set permissions on objects, encryption properties and storage class properties
 
 ##Rubygems.org
 Hosted at [Rubygems.org](https://rubygems.org/gems/s3_patron)
