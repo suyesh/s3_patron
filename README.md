@@ -1,38 +1,37 @@
-# S3-Patron
+# S3-Patron - Command-line utility for S3 written in Ruby
+![S3](https://cdn.foliovision.com/images/edd/2016/05/amazon-s3-icon1.png)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/s3_patron`. To experiment with that code, run `bin/console` for an interactive prompt.
+S3-Patron lets you list, upload, download to and from s3 using your terminal
 
-TODO: Delete this and the text above, and describe your gem
 
-## Installation
+## Setup
+Make sure [Ruby](https://www.ruby-lang.org/en/documentation/installation/) is installed.
 
 Add this line to your application's Gemfile:
-
-```ruby
-gem 's3_patron'
+```
+    $ gem install s3_patron
 ```
 
-And then execute:
+Set ENV variables
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install s3_patron
+```
+    $ export AWS_ACCESS_KEY_ID="YOUR AWS ACCESS KEY"
+    $ export AWS_SECRET_ACCESS_KEY="YOUR AWS SECERET KEY"
+    $ export AWS_REGION="AWS REGION"
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+Commands:
+  s3patron buckets REGION(OPTIONAL)                                                  # List all buckets
+  s3patron create BUCKET_NAME REGION(OPTIONAL)                                       # create bucket
+  s3patron download BUCKET_NAME OBJECT DOWNLOAD_LOCATION(OPTIONAL) REGION(OPTIONAL)  # Download object from bucket
+  s3patron help [COMMAND]                                                            # Describe Commands
+  s3patron list BUCKET_NAME REGION(OPTIONAL)                                         # List objects inside bucket
+  s3patron upload BUCKET_NAME FILE REGION(OPTIONAL) PATH_TO_FILE                     # Upload into bucket
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/suyesh/s3_patron. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+```
 
 
 ## License
