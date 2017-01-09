@@ -2,6 +2,7 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 's3_patron/version'
+require 's3_patron/banner'
 
 Gem::Specification.new do |spec|
   spec.name          = "s3_patron"
@@ -9,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Suyesh Bhandari"]
   spec.email         = ["suyeshb@gmail.com"]
 
-  spec.summary       = "Command-line utility to manage S3"
-  spec.description   = "Command-line utility to manage S3"
+  spec.summary       = "Command-line utility to manage S3 written in Ruby"
+  spec.description   = "Command-line utility to manage S3 written in Ruby"
   spec.homepage      = "https://github.com/suyesh/s3_patron"
   spec.license       = "MIT"
 
@@ -29,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-  spec.post_install_message = "Now you use s3p or s3patron to run the commands."
+  spec.post_install_message = S3Patron::Banner.new.to_s
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "pry"

@@ -1,7 +1,7 @@
 require 'aws-sdk'
 require 'thor'
 require 'colorize'
-require 'pry'
+
 module S3Patron
     class Cli < Thor
         desc 'list BUCKET_NAME REGION(OPTIONAL)', 'List objects inside of a bucket'
